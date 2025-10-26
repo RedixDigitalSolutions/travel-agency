@@ -1,32 +1,33 @@
-# 🏠 Redix Digital Solutions - Furniture Portfolio
+# ✈️ Redix Digital Solutions - Travel Agency Portfolio
 
 ![Redix Digital Solutions](public/redix_logo.png)
 
-> Transforming furniture businesses through premium video content, photography, and digital marketing excellence.
+> Inspiring wanderlust through captivating travel video content and digital marketing excellence.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://redixdigitalsolutions.github.io/travel-agency-portfolio/)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://redixdigitalsolutions.github.io/travel-agency/)
 [![React](https://img.shields.io/badge/React-19.1.1-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.7-purple)](https://vitejs.dev/)
 
 ## 🎯 About
 
-A premium portfolio website showcasing Redix Digital Solutions' work in furniture video content creation, professional photography, and web development for home furnishing businesses.
+A premium portfolio website showcasing Redix Digital Solutions' work in travel video content creation and web development for travel agencies and tour operators.
 
 Based in Tunisia, we serve clients worldwide with cutting-edge digital marketing solutions, specializing in:
-- Furniture Video Production
-- Professional Product Photography
-- E-commerce Website Development
-- Interior Design Content Creation
+- Travel Video Production
+- Destination Showcase Content
+- Travel Booking Platform Development
+- Social Media Marketing for Tourism
+- Adventure & Cultural Tour Promotion
 
 ## ✨ Features
 
-- 🎥 **Interactive Video Gallery** - Custom video player with controls (play/pause, volume, speed, fullscreen)
-- 📸 **Image Gallery with Lightbox** - Professional photo showcase with modal viewer
-- 🔍 **Advanced Filtering** - Filter by client and category for both videos and images
+- 🎥 **Interactive Video Gallery** - Custom video player with full controls (play/pause, volume, speed, fullscreen)
+- 🔍 **Advanced Filtering** - Filter by client and video type (reels, landscape, square)
 - 📱 **Fully Responsive** - Optimized for all devices and screen sizes
-- 🎨 **Premium Design** - Gradient backgrounds with purple/blue theme
+- 🎨 **Premium Design** - Gradient backgrounds with purple/blue travel theme
 - 🚀 **Fast Performance** - Built with Vite for lightning-fast load times
-- 🌐 **Web Projects Showcase** - Display of developed e-commerce platforms
+- 🌐 **Web Projects Showcase** - Display of travel booking platforms
+- 🎬 **Multiple Aspect Ratios** - Support for 9:16 reels, 16:9 landscape, and 1:1 square videos
 
 ## 🛠️ Tech Stack
 
@@ -35,13 +36,13 @@ Based in Tunisia, we serve clients worldwide with cutting-edge digital marketing
 - **Vite 7.1.7** - Build tool and dev server
 - **CSS Modules** - Scoped styling
 - **Lucide React** - Icon library
-- **React Icons** - Additional icons
+- **React Icons** - Social media icons
 
 ### Features
 - Native HTML5 video player with custom controls
-- Image lightbox with smooth animations
 - Intersection Observer for lazy loading
 - Responsive aspect ratio handling
+- Smooth scroll navigation
 
 ## 🚀 Getting Started
 
@@ -54,20 +55,23 @@ Based in Tunisia, we serve clients worldwide with cutting-edge digital marketing
 
 1. **Clone the repository**
 git clone https://github.com/RedixDigitalSolutions/travel-agency.git
+cd travel-agency
 
-cd travel-agency-portfolio
+
 
 2. **Install dependencies**
 npm install
 
 
+
 3. **Add your assets**
 - Place videos in `public/assets/video/`
-- Place images in `public/assets/photos/`
-- Update `src/data/data.js` with your content
+- Update `src/data/data.js` with your video information
+- Add your logo as `public/redix_logo.png`
 
 4. **Start development server**
 npm run dev
+
 
 
 5. **Open your browser**
@@ -77,17 +81,20 @@ npm run dev
 
 npm run build
 
+
+
 ### Preview Production Build
 
 npm run preview
 
+
+
 ## 📁 Project Structure
 
-travel-agency-portfolio/
+travel-agency/
 ├── public/
 │ ├── assets/
-│ │ ├── photos/ # Product photos
-│ │ └── video/ # Video content
+│ │ └── video/ # Travel videos
 │ └── redix_logo.png # Company logo
 ├── src/
 │ ├── components/
@@ -95,18 +102,19 @@ travel-agency-portfolio/
 │ │ ├── Hero.jsx
 │ │ ├── VideoCard.jsx
 │ │ ├── VideoGallery.jsx
-│ │ ├── ImageGallery.jsx
 │ │ ├── WebsiteShowcase.jsx
 │ │ └── Footer.jsx
 │ ├── data/
-│ │ ├── data.js # Videos and images data
-│ │ └── links.js # Website portfolio data
+│ │ ├── data.js # Travel videos data
+│ │ └── links.js # Website projects data
 │ ├── App.jsx
 │ ├── index.css
 │ └── main.jsx
 ├── package.json
 ├── vite.config.js
 └── README.md
+
+
 
 ## 🌐 Deployment
 
@@ -118,17 +126,45 @@ npm run deploy
 
 Your site will be live at: `https://redixdigitalsolutions.github.io/travel-agency/`
 
+### Manual Deployment Steps
+
+1. **Build the project**
+npm run build
+
+
+
+2. **Deploy to gh-pages branch**
+npx gh-pages -d dist
+
+
+
+3. **Configure GitHub Pages**
+- Go to repository Settings → Pages
+- Select `gh-pages` branch as source
+- Save and wait 2-3 minutes
+
 ## 👥 Our Clients
 
-### Furniture Video Content
-- **Modern Living** - Contemporary furniture showcase
-- **Comfort Home** - Cozy home furnishings
-- **Elegant Interiors** - Premium interior design
-- **Cozy Corner** - Comfortable living solutions
-- **Urban Style** - Modern urban furniture
-- **Premium Furnish** - Luxury furniture pieces
-- **Home Essence** - Essential home furniture
-- **Luxury Living** - High-end furniture collections
+### Travel Video Content
+- **Yalla Travel Agency** - Comprehensive travel packages and destination guides
+- 9 promotional videos showcasing destinations worldwide
+- Beach resorts, cultural experiences, city tours, and adventure travel
+
+- **Sama Tours Lebanon** - Premium Lebanon tours and experiences
+- 5 videos featuring Lebanese culture, mountains, and coastal destinations
+- Heritage sites, adventure tourism, and culinary experiences
+
+### Web Development Projects
+- **[Yalla Travel Agency](https://www.yallatravelagency.me/)** - Full-stack travel booking platform
+- Built with React, Node.js, Booking API, and Stripe integration
+- Complete booking system with flight reservations and tour packages
+
+## 📊 Portfolio Statistics
+
+- 📹 **14 Travel Videos** - Professional travel content
+- 🌍 **2 Travel Agencies** - Satisfied clients
+- 💻 **1 Web Platform** - Full-stack booking system
+- 🎥 **Multiple Formats** - Reels (9:16), Landscape (16:9), Square (1:1)
 
 ## 📞 Contact
 
@@ -142,8 +178,18 @@ Your site will be live at: `https://redixdigitalsolutions.github.io/travel-agenc
 ### Social Media
 - [Instagram](https://www.instagram.com/redixdigitalsolutions/)
 - [Facebook](https://www.facebook.com/profile.php?id=61560535962106)
-- [LinkedIn](https://www.linkedin.com/company/redix-digital-solutions/posts/?feedView=all)
+- [LinkedIn](https://www.linkedin.com/company/redix-digital-solutions/)
 - [WhatsApp](https://wa.me/21692861655)
+
+## 🎬 Video Categories
+
+Our travel video content includes:
+- 🏖️ **Beach Destinations** - Tropical paradises and coastal getaways
+- 🏔️ **Mountain Adventures** - Hiking, skiing, and nature experiences
+- 🏛️ **Cultural Heritage** - Historical sites and cultural immersion
+- 🌆 **City Tours** - Urban exploration and city highlights
+- 🎒 **Adventure Travel** - Thrilling experiences and activities
+- 🍽️ **Culinary Experiences** - Food tourism and local cuisine
 
 ## 📄 License
 
