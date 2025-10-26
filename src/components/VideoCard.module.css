@@ -1,0 +1,305 @@
+.videoCard {
+    background: rgba(20, 20, 30, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.videoCard.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.videoCard:hover {
+    transform: translateY(-10px);
+    border-color: rgba(138, 43, 226, 0.5);
+    box-shadow: 0 20px 50px rgba(138, 43, 226, 0.3);
+}
+
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.aspectRatio9_16 {
+    padding-top: 177.78%;
+}
+
+.aspectRatio16_9 {
+    padding-top: 56.25%;
+}
+
+.aspectRatio1_1 {
+    padding-top: 100%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.typeBadge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(138, 43, 226, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.controlsOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.controlsOverlay.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.centerPlayButton {
+    background: rgba(138, 43, 226, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    margin: auto;
+    padding-left: 4px;
+}
+
+.centerPlayButton:hover {
+    background: rgba(138, 43, 226, 1);
+    transform: scale(1.1);
+}
+
+.controlsBar {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.progressContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.progressBar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #8a2be2;
+    cursor: pointer;
+}
+
+.progressBar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #8a2be2;
+    cursor: pointer;
+    border: none;
+}
+
+.timeDisplay {
+    display: flex;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 500;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftControls,
+.rightControls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.controlBtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.controlBtn:hover {
+    background: rgba(138, 43, 226, 0.3);
+    transform: scale(1.1);
+}
+
+.volumeControl {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.volumeSlider {
+    width: 60px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.volumeSlider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    border: none;
+}
+
+.speedControl {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.speedControl:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.info {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(65, 105, 225, 0.1));
+}
+
+.client {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+}
+
+.category {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .centerPlayButton {
+        width: 60px;
+        height: 60px;
+    }
+
+    .centerPlayButton svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .typeBadge {
+        top: 0.75rem;
+        right: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .controlsBar {
+        padding: 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .volumeControl {
+        display: none;
+    }
+
+    .speedControl {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .controlBtn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info {
+        padding: 1rem;
+    }
+
+    .client {
+        font-size: 1rem;
+    }
+
+    .category {
+        font-size: 0.85rem;
+    }
+}
